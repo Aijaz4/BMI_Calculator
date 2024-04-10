@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            justify-content: center;
+            text-align: start;
+            margin-left: 40px;
+        }
+        h1{
+            margin-left: 40px;
+        }
+        label{
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input{
+            height: 25px;
+            width: 240px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 22px;
+        }
+        button{
+            margin-top: 10px;
+            font-size: 25px;
+            background: #000000dd;
+            color: #04f2ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Check Your BMI</h1>
+
+    <label for="width">Put your weigth in here (KG)</label><br>
+    <input id="width" type="number"> <br>
+    <label for="width">And your height in here (CM)</label><br>
+    <input id="hight" type="number"><br>
+
+    <button onclick="check()">Calculate BMI</button>
+
+    <h2 id="val"></h2>
+</body>
+<script src="index.js"></script>
+</html>
